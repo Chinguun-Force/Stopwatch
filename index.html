@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-[#f7f7f6]">
+    <div class="w-[700px] h-[400px] bg-[#2d123b] rounded-xl flex justify-center items-center">
+        <div class="text-center flex flex-col gap-10">
+            <p class="text-lg text-white">Online Timer & Stopwatch</p>
+            <div id="timer" class="text-8xl text-white">00:00:00</div>
+            <div id="buttons" class="flex justify-center gap-8">
+                <button class="text-lg bg-[#f7f7f6] w-[130px] h-[40px] rounded-full hover:bg-[#e67cd9] hover:text-white" id="start">Start</button>
+                <button disabled class="text-lg bg-[#f7f7f6] w-[130px] h-[40px] rounded-full disabled:text-[rgba(16, 16, 16, 0.3) bg-[rgba(239, 239, 239, 0.3)]] hover:bg-[#e67cd9] hover:text-white" id="stop">Stop</button>
+                <button disabled class="text-lg bg-[#f7f7f6] w-[130px] h-[40px] rounded-full disabled:text-[rgba(16, 16, 16, 0.3) bg-[rgba(239, 239, 239, 0.3)]] hover:bg-[#e67cd9] hover:text-white" id="reset">Reset</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
